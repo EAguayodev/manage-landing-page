@@ -188,7 +188,7 @@ a:hover {
 }
 
 .testimonials__slider {
-  display: flex;;
+  display: flex;
   gap: 40px;
   overflow: hidden;
   padding: 40px 0px;
@@ -201,6 +201,7 @@ a:hover {
   gap: 2rem;
   margin-bottom: 2rem;
   padding: 20px 10px;
+  cursor: pointer;
 }
 
 .testimonial-card h3 {
@@ -423,11 +424,9 @@ svg.social:hover {
 
   .circle-button.active {
     background-color: var(--bright-red);
+    opacity: .75;
   }
 
-  .circle-button.active {
-    background-color: var(--bright-red);
-  }
 
   .cta .container {
     flex-direction: column;
@@ -438,6 +437,17 @@ svg.social:hover {
     width: 334px;
     text-align: center;
     margin-bottom: 1.5rem;
+  }
+
+  .testimonial-card{
+    display: none;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+  }
+
+  .testimonial-card.active {
+      display: block;
+      opacity: 1;
   }
 
   .footer__content {

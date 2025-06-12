@@ -1,4 +1,3 @@
-// menu toggle
 const menu = document.getElementById('mobile-menu');
 const ham = document.getElementById('hamburger');
 
@@ -6,21 +5,18 @@ ham.addEventListener('click', function() {
     menu.classList.toggle('show');
 });    
 
-// testimonial slider
-const cardSwiper = new Swiper('.testimonial__slider', {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+const testimonials = document.querySelectorAll(".testimonial-card");
+const buttons = document.querySelectorAll(".circle-button");
+
+buttons.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    testimonials.forEach((t) => t.classList.remove("active"));
+    buttons.forEach((b) => b.classList.remove("active"));
+    testimonials[index].classList.add("active");
+    btn.classList.add("active");
+  });
 });
 
-// Form input error and success
 document.getElementById('btn-go').addEventListener('click', function() {  
     ValiditeEmail();
     checkEmail();
