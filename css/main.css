@@ -404,6 +404,12 @@ svg.social:hover {
     display: none;
   }
 
+  .hero__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .hero__content h1 {
     font-size: 2.5rem;
     text-align: center;
@@ -413,14 +419,8 @@ svg.social:hover {
     text-align: center;
   }
 
-
   .hero {
     flex-direction: column-reverse;
-  }
-
-  .hero .btn-primary {
-    position: relative;
-    left: 5.5rem;
   }
 
   .features {
