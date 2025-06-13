@@ -269,7 +269,7 @@ a:hover {
   align-items: start;
 }
 
-.footer-logo{
+.footer-logo {
   margin-bottom: 3rem;
 }
 
@@ -316,9 +316,9 @@ input {
   font-size: 0.625rem;
   position: relative;
   left: 1rem;
-} 
+}
 
-.social{
+.social {
   cursor: pointer;
   margin: 0 5px;
 }
@@ -340,8 +340,6 @@ svg.social:hover {
 
   .nav__links {
     display: none;
-    /* flex-direction: column;
-    align-items: center; */
   }
 
   .nav__links.show {
@@ -356,7 +354,50 @@ svg.social:hover {
     height: 291px;
     top: 100px;
     left: 2rem;
+    -webkit-box-shadow: 0px 2px 54px 0px rgba(45, 49, 77, 0.91);
+    -moz-box-shadow: 0px 2px 54px 0px rgba(45, 49, 77, 0.91);
     box-shadow: 0px 2px 54px 0px rgba(45, 49, 77, 0.91);
+  }
+
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color: var(--dark-blue);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .top,
+  .middle,
+  .bottom {
+    height: 4px;
+    width: 35px;
+    background-color: var(--dark-blue);
+    transition: 0.4s;
+    margin: 3px 0;
+  }
+
+    .mobile-nav-toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: none;
+      position: absolute;
+      top: 1.5rem;
+      right: 3rem;
+      border: none;
+      cursor: pointer;
+    }
+
+  .mobile-nav-toggle.show .top {
+    transform: rotate(45deg) translateY(10px);
+  }
+
+  .mobile-nav-toggle.show .middle {
+    opacity: 0;
+  }
+
+  .mobile-nav-toggle.show .bottom {
+    transform: rotate(-45deg) translateY(-10px);
   }
 
   .header-bt {
@@ -372,9 +413,6 @@ svg.social:hover {
     text-align: center;
   }
 
-  .mobile-nav-toggle {
-    display: block;
-  }
 
   .hero {
     flex-direction: column-reverse;
@@ -439,15 +477,23 @@ svg.social:hover {
     margin-bottom: 1.5rem;
   }
 
-  .testimonial-card{
+  .testimonial-card {
     display: none;
-      opacity: 0;
-      transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
   }
 
   .testimonial-card.active {
-      display: block;
-      opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+  }
+
+  .testimonial-card p{
+    width: 100%;
+    max-width: 350px;
   }
 
   .footer__content {

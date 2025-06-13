@@ -38,9 +38,10 @@
       </div>
      <div>
       <button class="btn btn-primary header-bt">Get Started</button>
-      <button class="mobile-nav-toggle" id="hamburger" aria-label="Open Menu">
-        <img class="icon-open" id="icon-open" src="images/icon-hamburger.svg" alt="hamburger menu standard">
-        <img class="icon-close" id="icon-close" src="images/icon-close.svg" alt="menu close icon">
+      <button class="mobile-nav-toggle" id="hamburger" aria-label="Open Menu" aria-expanded="false">
+         <span class="bar top"></span>
+         <span class="bar middle"></span>
+         <span class="bar bottom"></span>
       </button>
      </div>
     </nav>
@@ -197,7 +198,7 @@
      </div>
       <div class="footer__newsletter">
         <form id="form" onclick="validateEmail()">
-          <input id="email-submission" type="email"  placeholder="Updates in your inbox…" />
+          <input id="email-submission" type="email" placeholder="Updates in your inbox…" />
           <button class="btn btn-footer" onclick="checkEmail()" id="btn-go">Go</button>
           <p id="error-text"></p>
         </form>

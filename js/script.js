@@ -2,6 +2,7 @@ const menu = document.getElementById('mobile-menu');
 const ham = document.getElementById('hamburger');
 
 ham.addEventListener('click', function() {
+    ham.classList.toggle('show');
     menu.classList.toggle('show');
 });    
 
