@@ -335,7 +335,7 @@ svg.social:hover {
 
 @media(max-width: 768px) {
   .nav {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .nav__links {
