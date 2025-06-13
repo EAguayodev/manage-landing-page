@@ -25,7 +25,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 90rem;
   margin: 0 auto;
 }
 
@@ -178,7 +178,7 @@ a:hover {
 .accordion__body p {
   color: var(--dark-grayish-blue);
   line-height: 28px;
-  width: 445pxrem;
+  width: 445px;
 }
 
 /* TESTIMONIALS */
@@ -333,7 +333,7 @@ svg.social:hover {
 }
 
 
-@media(max-width: 768px) {
+@media(max-width: 48rem) {
   .nav {
     justify-content: space-around;
   }
