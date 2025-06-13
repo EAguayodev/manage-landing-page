@@ -11,7 +11,7 @@
   /* // secondary colors */
   --dark-grayish-blue: hsl(227, 12%, 61%);
   --very-dark-blue: hsl(233, 12%, 13%);
-  --very-pale-red: hsl(13, 100%, 96%);
+  --very-pale-red: hsl(12, 100%, 96%);
   --very-light-gray: hsl(0, 0%, 98%);
 }
 
@@ -195,7 +195,7 @@ a:hover {
 }
 
 .testimonial-card {
-  background-color: hsl(0, 50%, 98%);
+  background-color: #efeded;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   gap: 2rem;
