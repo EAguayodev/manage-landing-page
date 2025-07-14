@@ -181,7 +181,6 @@ a:hover {
   width: 445px;
 }
 
-/* TESTIMONIALS */
 .testimonials {
   padding: 8rem 0;
   text-align: center;
@@ -226,7 +225,6 @@ a:hover {
   display: none;
 }
 
-/* CTA */
 .cta {
   background: var(--bright-red);
   background-image: url(../images/bg-simplify-section-desktop.svg);
@@ -256,7 +254,7 @@ a:hover {
   background-color: #e9e4e4;
 }
 
-/* FOOTER */
+
 .footer {
   background: var(--very-dark-blue);
   padding: 3rem 0;
@@ -324,8 +322,8 @@ input {
 }
 
 
-svg.social:hover {
-  fill: hsl(12, 92%, 72%);
+.social:hover {
+  fill: var(--bright-red);
 }
 
 .copy {
@@ -359,41 +357,29 @@ svg.social:hover {
     box-shadow: 0px 2px 54px 0px rgba(45, 49, 77, 0.91);
   }
 
-  .bar {
-    width: 100%;
-    height: 4px;
-    background-color: var(--dark-blue);
-    transition: all 0.4s ease-in-out;
-  }
-
-  .top,
-  .middle,
-  .bottom {
-    height: 4px;
-    width: 35px;
-    background-color: var(--dark-blue);
-    transition: 0.4s;
-    margin: 3px 0;
-  }
-
     .mobile-nav-toggle {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       background: none;
       position: absolute;
-      top: 1.5rem;
+      top: 2rem;
       right: 3rem;
       border: none;
       cursor: pointer;
     }
 
-  .mobile-nav-toggle.show .top {
-    transform: rotate(45deg) translateY(10px);
+  .mobile-nav-toggle .icon-close {
+    display: none;
   }
 
-  .mobile-nav-toggle.show .middle {
-    opacity: 0;
+  .mobile-nav-toggle.show .icon-hamburger {
+    display: none;
+  }
+
+  .mobile-nav-toggle.show .icon-close {
+    display: block;
+    transition: 0.6s ease-in-out;
   }
 
   .mobile-nav-toggle.show .bottom {
