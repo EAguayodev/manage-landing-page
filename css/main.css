@@ -379,8 +379,7 @@ input {
 
   .mobile-nav-toggle.show .icon-close {
     display: block;
-    transition: 0.6s ease-in-out;
-  }
+}
 
   .mobile-nav-toggle.show .bottom {
     transform: rotate(-45deg) translateY(-10px);
